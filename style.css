@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 :root {
   --orange-text: #f6b301;
   --green-button: #143417;
@@ -10,13 +10,14 @@
           box-sizing: border-box;
   font-size: 14px;
   font-family: "Inter", sans-serif;
+  color: var(--font-colour);
   margin: 0;
   padding: 0;
 }
 
 body {
   background-color: #f1ebe3;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -24,7 +25,14 @@ body > nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20rem;
+  padding: 1rem;
 }
 
 body > nav > .navbar-left {
@@ -39,6 +47,32 @@ body > nav > .navbar-left {
           align-items: center;
 }
 
+body > nav > .navbar-mid > a {
+  margin-right: 1rem;
+}
+
+body > nav > .navbar-mid > .three {
+  margin-right: 0;
+}
+
+body > nav > .navbar-mid > a {
+  text-decoration: none;
+}
+
+body > nav > .navbar-right > a {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+body > nav > .navbar-right > button {
+  height: 3.5rem;
+  width: 9rem;
+  color: white;
+  background-color: var(--green-button);
+  border: none;
+  border-radius: 0.3rem;
+}
+
 body > main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,23 +83,95 @@ body > main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80vw;
+  width: 100vw;
   height: 70vh;
-  gap: 8rem;
+  gap: 7rem;
+}
+
+body > main > .main-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 52rem;
+  height: 22rem;
 }
 
 body > main > .main-left .line-one {
-  font-size: 3rem;
+  color: black;
+  font-size: 4.2rem;
 }
 
 body > main > .main-left > .line-two {
-  font-size: 3rem;
+  font-size: 4.2rem;
   color: var(--orange-text);
 }
 
+body > main > .main-left > p {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  line-height: 2rem;
+}
+
+body > main > .main-left > button {
+  height: 4.5rem;
+  width: 9rem;
+  color: white;
+  background-color: var(--green-button);
+  border: none;
+  border-radius: 0.3rem;
+}
+
+body > main > .main-left > .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+body > main > .main-left > .flex > .lower-text {
+  margin-top: 1rem;
+}
+
+body > main > .main-left > .flex > .flex {
+  gap: 0.7rem;
+}
+
+body > main > .main-left > .flex > .flex > img {
+  width: 20px;
+  height: 20px;
+}
+
 body > main > .main-right > .photo {
-  width: 27rem;
-  height: 32rem;
+  width: 26rem;
+  height: 30rem;
+}
+
+body > footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+body > footer > .flex {
+  gap: 7rem;
 }
 
 .flex {

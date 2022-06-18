@@ -55,6 +55,10 @@ body {
         border-radius: 0.3rem;
       }
     }
+    > .menu-dropdown {
+      display: none;
+      //transform: scale(0);
+    }
   }
   > main {
     display: flex;
@@ -62,24 +66,25 @@ body {
     align-items: center;
     width: 100vw;
     height: 70vh;
-    gap: 7rem;
+    gap: 8rem;
     > .main-left {
       display: flex;
       flex-direction: column;
       width: 52rem;
       height: 22rem;
-      .line-one {
+      > .line-one {
         color: black;
         font-size: 4.2rem;
-      }
-      > .line-two {
-        font-size: 4.2rem;
-        color: var(--orange-text);
+        > .line-two {
+          font-size: 4rem;
+          color: var(--orange-text);
+        }
       }
       > p {
         font-size: 1.2rem;
         padding: 1rem 0;
         line-height: 2rem;
+        width: 50rem;
       }
       > button {
         height: 4.5rem;
@@ -126,4 +131,230 @@ body {
 
 .flex {
   display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    > nav {
+      gap: 15rem;
+    }
+    > main {
+      gap: 4rem;
+      > .main-left {
+        width: 38rem;
+        > .line-one {
+          color: black;
+          font-size: 3.2rem;
+          > .line-two {
+            font-size: 3.2rem;
+            color: var(--orange-text);
+          }
+        }
+        > p {
+          width: 40rem;
+          font-size: 1.1rem;
+        }
+      }
+      > .main-right {
+        > .photo {
+          width: 20rem;
+          height: 24rem;
+        }
+      }
+    }
+    > footer {
+      > .flex {
+        gap: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    > nav {
+      gap: 9rem;
+    }
+    > main {
+      gap: 3rem;
+      > .main-left {
+        width: 35rem;
+        > .line-one {
+          color: black;
+          font-size: 3.2rem;
+          > .line-two {
+            font-size: 3.2rem;
+            color: var(--orange-text);
+          }
+        }
+        > p {
+          width: 35rem;
+          font-size: 1.1rem;
+        }
+      }
+      > .main-right {
+        > .photo {
+          width: 20rem;
+          height: 24rem;
+        }
+      }
+    }
+    > footer {
+      > .flex {
+        flex-shrink: 4;
+        gap: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    > nav {
+      gap: 3rem;
+    }
+    > main {
+      display: flex;
+      flex-direction: column;
+      height: 65%;
+      > .main-left {
+        width: 40rem;
+        gap: 1rem;
+        height: auto;
+        > h1 {
+          display: inline;
+          > .line-one {
+            color: black;
+            font-size: 4rem;
+            > .line-two {
+              font-size: 4rem;
+              color: var(--orange-text);
+            }
+          }
+        }
+        > p {
+          width: 35rem;
+          font-size: 1.2rem;
+        }
+      }
+      > .main-right {
+        display: none;
+      }
+    }
+    > footer {
+      gap: 2rem;
+      > .flex {
+        width: 600px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    > nav {
+      gap: 3rem;
+    }
+    > main {
+      display: flex;
+      flex-direction: column;
+      height: 65%;
+      > .main-left {
+        width: 34rem;
+        gap: 1rem;
+        height: auto;
+        > h1 {
+          display: inline;
+          > .line-one {
+            color: black;
+            font-size: 4rem;
+            > .line-two {
+              font-size: 4rem;
+              color: var(--orange-text);
+            }
+          }
+        }
+        > p {
+          width: 35rem;
+          font-size: 1.2rem;
+        }
+      }
+      > .main-right {
+        display: none;
+      }
+    }
+    > footer {
+      gap: 2rem;
+      > .flex {
+        width: 600px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    > nav {
+      gap: 5rem;
+      > .navbar-mid {
+        display: none;
+      }
+      > .navbar-right {
+        display: none;
+      }
+      > .menu-dropdown {
+        display: block;
+        > .hidden {
+          display: none;
+        }
+      }
+    }
+    > main {
+      //display: flex;
+      //flex-direction: column;
+      height: 65%;
+      > .main-left {
+        width: 40rem;
+        gap: 1rem;
+        height: auto;
+        > h1 {
+          display: inline;
+          > .line-one {
+            color: black;
+            font-size: 4rem;
+            > .line-two {
+              font-size: 4rem;
+              color: var(--orange-text);
+            }
+          }
+        }
+        > p {
+          width: 35rem;
+          font-size: 1.2rem;
+        }
+      }
+      > .main-right {
+        display: none;
+      }
+    }
+    > footer {
+      gap: 2rem;
+      > .flex {
+        width: 370px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        > img {
+          width: 35%;
+          height: 35%;
+        }
+      }
+    }
+  }
 }

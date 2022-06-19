@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap");
 
 :root {
   --orange-text: #f6b301;
@@ -216,7 +216,6 @@ body {
     > main {
       display: flex;
       flex-direction: column;
-      height: 65%;
       > .main-left {
         width: 40rem;
         gap: 1rem;
@@ -256,12 +255,23 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     > nav {
-      gap: 3rem;
+      gap: 10rem;
+      > .navbar-mid {
+        display: none;
+      }
+      > .navbar-right {
+        display: none;
+      }
+      > .menu-dropdown {
+        display: block;
+        > .hidden {
+          display: none;
+        }
+      }
     }
     > main {
       display: flex;
       flex-direction: column;
-      height: 65%;
       > .main-left {
         width: 34rem;
         gap: 1rem;
@@ -270,9 +280,9 @@ body {
           display: inline;
           > .line-one {
             color: black;
-            font-size: 4rem;
+            font-size: 3.5rem;
             > .line-two {
-              font-size: 4rem;
+              font-size: 3.5rem;
               color: var(--orange-text);
             }
           }
@@ -301,7 +311,6 @@ body {
 @media only screen and (max-width: 400px) {
   body {
     > nav {
-      gap: 5rem;
       > .navbar-mid {
         display: none;
       }
@@ -309,34 +318,33 @@ body {
         display: none;
       }
       > .menu-dropdown {
-        display: block;
+        display: inline-block;
+        transform: scale(1);
         > .hidden {
           display: none;
         }
       }
     }
     > main {
-      //display: flex;
-      //flex-direction: column;
-      height: 65%;
       > .main-left {
-        width: 40rem;
+        width: 25rem;
         gap: 1rem;
-        height: auto;
-        > h1 {
+        > .line-one {
           display: inline;
-          > .line-one {
-            color: black;
-            font-size: 4rem;
-            > .line-two {
-              font-size: 4rem;
-              color: var(--orange-text);
-            }
+          color: black;
+          font-size: 2.6rem;
+          font-weight: 500;
+          > .line-two {
+            font-size: 2.6rem;
+            color: var(--orange-text);
           }
         }
         > p {
-          width: 35rem;
-          font-size: 1.2rem;
+          width: 23rem;
+          font-size: 1rem;
+        }
+        > button {
+          height: 3.5rem;
         }
       }
       > .main-right {
@@ -349,10 +357,10 @@ body {
         width: 370px;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1.5rem;
+        gap: 2rem;
         > img {
-          width: 35%;
-          height: 35%;
+          width: 40%;
+          height: 40%;
         }
       }
     }

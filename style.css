@@ -361,15 +361,16 @@ body > footer > .flex {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   body > nav > .navbar-mid {
-    display: none;
+    visibility: hidden;
   }
   body > nav > .navbar-right {
-    display: none;
+    visibility: hidden;
   }
   body > nav > .menu-dropdown {
     display: inline-block;
+    visibility: visible;
     -webkit-transform: scale(1);
             transform: scale(1);
   }
@@ -377,7 +378,7 @@ body > footer > .flex {
     display: none;
   }
   body > main > .main-left {
-    width: 25rem;
+    width: 24rem;
     gap: 1rem;
   }
   body > main > .main-left > .line-one {

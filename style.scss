@@ -308,17 +308,20 @@ body {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   body {
     > nav {
       > .navbar-mid {
-        display: none;
+        //display: none;
+        visibility: hidden;
       }
       > .navbar-right {
-        display: none;
+        // display: none;
+        visibility: hidden;
       }
       > .menu-dropdown {
         display: inline-block;
+        visibility: visible;
         transform: scale(1);
         > .hidden {
           display: none;
@@ -327,7 +330,7 @@ body {
     }
     > main {
       > .main-left {
-        width: 25rem;
+        width: 24rem;
         gap: 1rem;
         > .line-one {
           display: inline;

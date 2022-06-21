@@ -49,6 +49,9 @@ body {
         border: none;
         border-radius: 0.3rem;
       }
+      > button:hover {
+        cursor: pointer;
+      }
     }
     > .menu-dropdown {
       display: none;
@@ -67,6 +70,9 @@ body {
           align-items: center;
         }
       }
+    }
+    > .menu-dropdown:hover {
+      cursor: pointer;
     }
   }
   > main {
